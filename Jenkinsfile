@@ -14,7 +14,7 @@ pipeline {
         stage('Drop the apache docker container'){
             steps{
                 echo 'Dropping the container...'
-                sh 'docker rm -f tomcat'
+                sh 'docker rm -f tomcat1'
             }
         }
         stage('Create the Tomcat container'){
