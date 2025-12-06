@@ -33,6 +33,9 @@ pipeline {
         }
     }
     post {
+        always {
+            echo 'This will always work'
+        }
         success {
     // One or more steps need to be included within each condition's block.
         echo 'The Deployment has worked'
