@@ -35,6 +35,7 @@ pipeline {
     post {
         always {
             echo 'This will always work'
+            cleanWs()
         }
         success {
     // One or more steps need to be included within each condition's block.
