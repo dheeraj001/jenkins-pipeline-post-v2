@@ -31,6 +31,16 @@ pipeline {
                 sh 'cp -r shopping/* /var/lib/jenkins/tomcat-shop/shopping'
             }
         }
-
     }
+    post {
+        success {
+    // One or more steps need to be included within each condition's block.
+        echo 'The Deployment has worked'
+       }
+        failure {
+       // One or more steps need to be included within each condition's block.
+         echo 'The Deploymnet has failded'
+       }
+}
+
 }
